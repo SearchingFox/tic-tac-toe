@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module App (startApp) where
+module App where
 
 import Control.Concurrent.MVar (MVar, newMVar)
 import Network.Wai (Request, Response, pathInfo)

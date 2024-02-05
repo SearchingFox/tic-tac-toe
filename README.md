@@ -3,5 +3,10 @@ Simple web app in Haskell for playing Tic-Tac-Toe. Using Warp and Wai.
 
 ## Run
 ```sh
-cabal run
+cabal new-run
+```
+
+## Run tests
+```sh
+cabal new-test
 ```

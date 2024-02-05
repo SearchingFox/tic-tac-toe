@@ -2,7 +2,7 @@ module Game where
 
 import Data.Maybe (isJust)
 
-data Mark = X | O deriving (Eq)
+data Mark = X | O deriving (Eq, Show)
 
 data Winner = Winner Mark | Draw
 
@@ -11,7 +11,7 @@ type Board = [Maybe Mark]
 data GameState = GameState
   { board :: Board,
     activeMark :: Mark
-  }
+  } deriving (Eq, Show)
 
 renderBoard :: Board -> [String]
 renderBoard b =
